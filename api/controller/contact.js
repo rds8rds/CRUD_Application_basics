@@ -31,7 +31,7 @@ const postContact = (req, res, next) => {
     .then((data) => {
       res.status(201).json({
         message: "data saved",
-        cotact: data,
+        contact: data,
       });
     })
     .catch((error) => errorCatcher(error, res));
